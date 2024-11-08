@@ -5,7 +5,7 @@ import UserController from "../controllers/user.controller";
 const AuthRoute = express.Router()
 const userController = new UserController();
 
-AuthRoute.get('', userController.showUsers)
-AuthRoute.get('/:id', userController.showUserById)
+AuthRoute.post('/login', userController.signInUser)
+// AuthRoute.post('/logout', userController.signOutUser)
 
 export default AuthRoute;

@@ -1,7 +1,8 @@
 import express from 'express'
 import UserRoute from '../routes/user.route';
 import AuthRoute from '../routes/auth.route';
-const PORT = process.env.PORT || 3000;
+
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
